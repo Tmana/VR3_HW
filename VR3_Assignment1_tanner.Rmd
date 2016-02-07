@@ -1,0 +1,58 @@
+---
+title: "VR3 Assignment 1"
+author: "Graham Tanner Robart"
+date: "February 6, 2016"
+output: pdf_document
+---
+
+
+When discussing strengths and weaknesses, I find it helpful to consider both the technical and general.
+  
+                      
+              Strengths                Weaknesses
+----------- ------------------------ ------------------ 
+ Technical    1. Python               1. Java 
+              2. Linux/BASH           2. C 
+              3. Ruby                 3. hadoop 
+              4. Git                  4. dplyr
+              5. R  
+              6. SQL           
+  General     1. Geometric Intuition  1. Handwriting 
+              2. Speaking/Presenting  2. Linear Algebra 
+              3. Enthusiasm           3. Time Management 
+              
+----------- ------------------------- -------------------
+:My strength and weaknesses
+
+In our class, VR3, I would like to learn more adept usage of R, including making clean tables and graph design, and perhaps interactive design in shiny. I would like to learn proper usage of tuftes 5 principles, to produce concise and informative visualizations.
+  
+  
+  
+  
+  
+--------List of Interesting Live Data Visualizations---------
+  
+  
+[Big Company Revenue](http://pennystocks.la/battle-of-internet-giants/)  
+[US Birth/Death Rates](https://2f5553c27b4a1eaa4c181720e143fb92b5c72544.googledrive.com/host/0B2GQktu-wcTiZlAyTTFEaFVuOUk/)  
+[Traffic Tracking](http://tracker.geops.ch/?z=10&s=1&x=-8228904.7171&y=4986522.4142&l=transport)  
+[Traffic Simulation](https://patriciogonzalezvivo.github.io/tangram-sandbox/tangram.html?styles/tilt-ikeda#15.075/40.7650/-73.9778)  
+[Google Trends](https://www.google.com/trends/hottrends/visualize?pn=p1)  
+[Satellite Tracking](http://www.n2yo.com/)  
+[Commercial Flights](http://www.flightradar24.com/37.07,-49.51/4)  
+[Twitter Hashtags](http://hashtagify.me/)  
+[Bitcoin transactions](http://www.bitcoinmonitor.com/)  
+[Wind in the US](http://hint.fm/wind/)  
+[Lightning Map](http://www.lightningmaps.org/realtime?lang=en)  
+[Akamai Web Traffic Attack Map](https://www.akamai.com/us/en/solutions/intelligent-platform/visualizing-akamai/real-time-web-monitor.jsp)  
+[Norse Web Traffic Attack Map](http://map.norsecorp.com/)  
+[Large Hadron Collider](http://lhcdashboard.web.cern.ch/lhcdashboard/)  
+[Lord of the Rings](http://lotrproject.com/)  
+[Wealth Distribution](http://www.richblockspoorblocks.com/)  
+[Climate Simulation](http://project-ukko.net/map.html)  
+[SQL schema viewer](http://mkweb.bcgsc.ca/schemaball/?home)  
+[Hurricane Since 1851](http://uxblog.idvsolutions.com/2012/08/hurricanes-since-1851.html)  
+
+
+                     
+                
