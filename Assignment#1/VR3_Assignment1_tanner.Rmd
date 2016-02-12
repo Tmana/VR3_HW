@@ -22,7 +22,6 @@ When discussing strengths and weaknesses, I find it helpful to consider both the
               3. Enthusiasm           3. Time Management 
               
 ----------- ------------------------- -------------------
-:My strength and weaknesses
 
 In our class, VR3, I would like to learn more adept usage of R, including making clean tables and graph design, and perhaps interactive design in shiny. I would like to learn proper usage of tuftes 5 principles, to produce concise and informative visualizations.
   

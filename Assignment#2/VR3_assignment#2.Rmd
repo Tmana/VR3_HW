@@ -1,0 +1,9 @@
+---
+title: "VR3_Assignment #2"
+author: "Graham Tanner Robart"
+date: "February 12, 2016"
+output: html_document
+---
+
+In this report, we provide a current status of a 6 year investment in 5 different stocks, including Apple, GE, Walmart, Exxon, and Band of America.
+
