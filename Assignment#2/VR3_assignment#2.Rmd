@@ -1,9 +1,125 @@
 ---
-title: "VR3_Assignment #2"
+title: 'VR3_Assignment #2'
 author: "Graham Tanner Robart"
 date: "February 12, 2016"
-output: html_document
+output: pdf_document
 ---
 
 In this report, we provide a current status of a 6 year investment in 5 different stocks, including Apple, GE, Walmart, Exxon, and Band of America.
+We examine annual return on investment, both absolute and relative to the market. We also examine associated risk, as measured by Historical Volatility: the standard deviation of the stock values for a given time.
+
+Data was obtained from the [yahoo finance website.](https://finance.yahoo.com/market-overview/), and contains daily values for open, close, high, and lows.
+
+```{r}
+#install.packages("data.table",repos="http://cran.rstudio.com/")
+#install.packages("bizdays",repos="http://cran.rstudio.com/")
+#install.packages("tables", repos="http://cran.rstudio.com/")
+library(data.table,quietly=T)
+library(bizdays,quietly=T)
+#library(tables)
+library(knitr,quietly=T)
+
+setwd("~/Desktop/Data Sciences/Data Visualization/HW/Assignment#2/")
+
+APPLE <- read.csv("APPLE.csv")
+BOA <- read.csv("BOA.csv")
+EXXON <- read.csv("EXXON.csv")
+GE <- read.csv("GE.csv")
+MARKET <- read.csv("NYSE(composite)")
+WALMART <- read.csv("WALMART.csv")
+
+APPLE$company <- "Apple"
+BOA$company <- "Bank of America"
+EXXON$company <- "Exxon"
+GE$company <- "General Electric"
+`NASDAQ(composite)`$company <- "NASDAQ Composite"
+`NYSE(composite)`$company <- "NYSE Composite"
+WALMART$company <- "Walmart"
+
+
+
+all.data <- rbind(APPLE, BOA, WALMART, GE, EXXON, MARKET)
+all.data <- all.data[, c('Open', 'High', 'Low', 'Close') := NULL]
+names(all.data)[2] <- 'adj_close' 
+all.data <- all.data[, Date := as.Date(Date) ]
+all.data <- all.data[ Date >= as.Date('2010-01-29'), ]
+
+
+# getting important dates
+#  since we are talking about years since 1/29/10
+#  each "adjusted year" begins and ends on the next business day
+
+years <- 2010:2016
+dates <- ISOdate(years, 1, 29)
+cal <- Calendar(weekdays=c('sunday', 'saturday'))
+dates <- adjust.next(dates, cal)
+
+# setting year values (is from 1-29 instead of 1-1)
+map <- as.data.table(dates)
+map[, year := year(dates)]
+all.data$year <- map$year[findInterval(x = all.data$Date, vec = map$dates)]
+
+# add current day to important dates so we get 2016 so far
+dates <- c(dates, all.data$Date[1])
+
+# getting changes by adj_year
+year.data <- all.data[ Date %in% dates, ]
+year.data[, change := 100 * adj_close / shift(adj_close, type = 'lead') - 100 ]
+
+# adjusting year value since date marks when change happens
+year.data[Date != last(dates), year := as.integer(year) - 1]
+
+# removing oldest year as it has meaningless change
+year.data <- year.data[Date != dates[1] , ]
+
+# getting relative to market changes
+market.year.data <- year.data[company == 'market',]
+year.data[, rel_change := ((change / 100 + 1) / (market.year.data$change / 100 + 1)) * 100 - 100, by = company]
+
+# historical volatility: sd of daily prices
+all.data[, volatility := sd(adj_close), by = list(company, year)]
+total_volatilities <- all.data[, sd(adj_close), by = list(company)]
+volat <- all.data
+volat[, c('Date', 'adj_close') := NULL ]
+volat <- unique(volat)
+
+# merging tables
+setkey(year.data, company, year)
+setkey(volat, company, year)
+final.data <- year.data[volat, ]
+final.data[, c('Date', 'adj_close') := NULL ]
+
+
+```
+
+
+Now that the data has been munged and organized into a proper tabulated format, we must produce an excellent table to represent it. 
+Below are some attempts, including using kable, and the latex function to produce a table in latex.
+```{r}
+
+setwd("~/spring2016/viz/vizrepo/assignments/0214/data/")
+final_table <- read.csv("final_table.csv")
+
+kable(final_table, 
+      caption="Annual Return is computed by the change in value from the beginning of year to end. Relative Return is computed by dividing the Annual Return by the market return. Historical Volatility is computed by taking the standard deviation for the given period of time.",
+      col.names = c("Company", " ", "2010","2011","2012",	"2013", "2014","2015","2016","Total"), 
+      padding=2, 
+      escape = TRUE, 
+      format.args = list(na.encode=FALSE,
+                        n.rgroup=c(3,3,3,3,3,3,1),
+                        n.cgroup = c(2,7))
+)
+
+
+latex(final_table,center='centering',numeric.dollar=FALSE,colheads=c("Company", " ", "2010","2011","2012",	"2013", "2014", "2015","2016","Total"),n.rgroup=c(3,3,3,3,3,3,1),n.cgroup = c(2,7))
+
+```
+
+
+
+
+
+
+
+
 
