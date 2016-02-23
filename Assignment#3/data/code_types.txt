@@ -1,0 +1,101 @@
+code, type
+"ASSISTANT PROFESSOR", Faculty                 
+"ASSOCIATE PROFESSOR", Faculty                 
+"GRADUATE TEACHING ASSISTANT", Faculty         
+"RESIDENT", Faculty                            
+"" , Other                                   
+"PROGRAM ASSISTANT", Faculty                   
+"GRADUATE TEACHING ASSOCIATE", Faculty         
+"ASSISTANT DIRECTOR", Faculty                  
+"OFFICE MANAGER", Administration                      
+"BIOLOGICAL SCIENTIST, SR", Faculty            
+"ASSISTANT IN", Administration                        
+"ADMINISTRATIVE ASSISTANT", Administration            
+"ACADEMIC PROGRAM SPECIALIST", Other         
+"RESEARCH ASSOCIATE", Faculty                  
+"OFFICE AST", Administration                          
+"DIRECTOR", Administration                            
+"ADMINISTRATIVE AST", Administration                  
+"RESEARCH PROGS/SVCS, CRD 3", Other          
+"LAW ENFORCEMENT OFFICER", Other             
+"OFFICE MGR", Administration                          
+"COORDINATOR", Administration                         
+"RESEARCH PROGS/SVCS, CRD 2", Other          
+"PROGRAM ASSOCIATE", Other                   
+"CUSTODIAL WORKER I", Other                  
+"SECRETARY, SR", Other                       
+"STAFF ASSISTANT", Administration                     
+"ACADEMIC ADVISOR", Faculty                    
+"FISCAL & BUSINESS SPECIALIST", Other        
+"ASSOCIATE LIBRARIAN", Other                 
+"POSTDOCTORAL ASSOCIATE", Faculty              
+"OFFICE ASSISTANT", Administration                    
+"ACADEMIC ADVISOR I", Faculty                  
+"SYSTEMS ADMINISTRATOR", Other               
+"EXTENSION PROGRAM AST", Other               
+"PROGRAM DIRECTOR", Other                    
+"RESEARCH PROGS/SVCS, CRD 1", Other          
+"LEARNING  & DEVT FACILITATOR", Other        
+"ADMINISTRATIVE SERVICES, CRD 3", Administration      
+"OFFICE COORDINATOR", Administration                  
+"TECHNOLOGY SPECIALIST", Other               
+"MEDIA SPECIALIST", Other                    
+"COORD ACADEMIC SUPPT SVCS", Administration           
+"OFFICE SPECIALIST", Administration                   
+"CUSTODIAL WORKER, SR", Other                
+"COOR RES PROG/SVCS", Other                  
+"EXTENSION AGENT IV", Other                  
+"GRANTS SPECIALIST, SR", Other               
+"LABORATORY TECH", Other                     
+"ADMINISTRATIVE SERVICES, CRD 1", Faculty      
+"PROGRAM PLANNER_ANALYST", Faculty
+"GRADUATE ASSISTANT", Faculty
+"PROFESSOR", Faculty
+"INSTRUCTOR", Faculty
+"GRADUATE RESEARCH ASSISTANT", Faculty
+"LECTURER", Faculty
+"CUSTODIAL WORKER", Other
+"FACULTY (GENERIC), Faculty
+"BIOLOGICAL SCIENTIST", Other
+"FACULTY ADMINISTRATOR", Administration
+"ADMINISTRATIVE SPECIALIST", Administration
+"ASSISTANT SCHOLAR/SCIENTIST/ENGINEER", Other
+"DISTINGUISHED PROFESSOR", Faculty
+"PROGRAM COORDINATOR", Administration
+"IT EXPERT", Other
+"ACCOUNTANT", Administration
+"UNIVERSITY SCHOOL INSTRUCTOR", Faculty
+"MAINTENANCE MECHANIC", Other
+"ASSOCIATE IN", Other
+"GROUNDSKEEPER", Other
+"CLINICAL PROGRAMS, CRD 4", Administration
+"ASSOCIATE DIRECTOR", Administration
+"EMINENT SCHOLAR", Other
+"GRADUATE RESEARCH ASSOCIATE", Faculty
+"ACADEMIC SVCS. ADMINISTRATOR", Administration
+"SCHOLAR/SCIENTIST/ENGINEER", Other
+"FISCAL AST, SR", Administration
+"ASSISTANT LIBRARIAN", Faculty
+"ASSOCIATE SCHOLAR/SCIENTIST/ENGINEER", Other
+"OFFICE ADMINISTRATOR", Administration
+"FISCAL & BUSINESS ANALYST", Administration
+"CLERK, SR", Administration
+"EXTENSION AGENT II", Other
+"MAINTENANCE SPECIALIST", Other
+"CLINICAL PROGRAMS, CRD 3", Administration
+"EXTENSION AGENT I", Other
+"ACCOUNTING SPECIALIST", Administration
+"PROGRAM MANAGER", Administration
+"COOR ADMIN SVCS", Administration
+"COORDINATOR ADMIN. SERVICES", Administration
+"LABORATORY TECH, SR", Other
+"EXECUTIVE SECRETARY", Administration
+"EDUC/TRAINING PROGS, CRD 2", Other
+"MAINTENANCE SUPPORT WORKER", Other
+"SECRETARY", Administration
+"LIBRARIAN", Faculty
+"GENERAL TRADES TECHNICIAN", Other
+"SECRETARY, EXECUTIVE", Administration
+"LABORATORY MGR", Administration
+"VETERINARY TECH 2", Other
+"EXTENSION AGENT III",  Other
